@@ -425,7 +425,7 @@
                          completion:^(BOOL finished){ 
                              if(self.alpha == 0) {
                                  [[NSNotificationCenter defaultCenter] removeObserver:self];
-                                 [hudView removeFromSuperview];
+                                 [self->hudView removeFromSuperview];
                                  hudView = nil;
 
                                  [overlayWindow removeFromSuperview];

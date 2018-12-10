@@ -237,10 +237,5 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)viewDidUnload {
-    [self setSearchBar:nil];
-    [super viewDidUnload];
-}
-
 @end
 

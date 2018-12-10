@@ -1070,7 +1070,6 @@
 				ORGANIZATIONNAME = "Daniel Slabaugh";
 				TargetAttributes = {
 					FD2523591757CB64000EDF48 = {
-						DevelopmentTeam = K4D698GWUQ;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.DataProtection = {
@@ -1359,7 +1358,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Wayne Mobile/Wayne Mobile.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = K4D698GWUQ;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HeartwoodAppUsingJson/Wayne Mobile-Prefix.pch";
 				INFOPLIST_FILE = "HeartwoodAppUsingJson/Wayne Mobile-Info.plist";
@@ -1384,7 +1383,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Wayne Mobile/Wayne Mobile.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = K4D698GWUQ;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HeartwoodAppUsingJson/Wayne Mobile-Prefix.pch";
 				INFOPLIST_FILE = "HeartwoodAppUsingJson/Wayne Mobile-Info.plist";
