@@ -263,7 +263,8 @@
 
 // Checks if we have an internet connection or not
 - (void)testInternetConnection {
-    
+    __weak typeof(self) weakSelf = self;
+
     internetReachableFoo = [Reachability reachabilityWithHostname:[NSString stringWithFormat:@"www.heartwood.com"]];
     
     // Internet is reachable
@@ -344,4 +345,6 @@
     orderView.sortType = @"NEEDATTN";
     [self.navigationController pushViewController:orderView animated:YES];
 }
+
+
 @end

@@ -428,7 +428,7 @@
                                  [self->hudView removeFromSuperview];
                                  hudView = nil;
 
-                                 [overlayWindow removeFromSuperview];
+                                 [self->overlayWindow removeFromSuperview];
                                  overlayWindow = nil;
                                  
                                  // uncomment to make sure UIWindow is gone from app.windows

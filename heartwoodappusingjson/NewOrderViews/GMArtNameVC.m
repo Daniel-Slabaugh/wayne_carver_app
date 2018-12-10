@@ -118,9 +118,5 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)viewDidUnload {
-    [super viewDidUnload];
-}
-
 @end
 

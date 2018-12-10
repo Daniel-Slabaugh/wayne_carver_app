@@ -592,12 +592,6 @@
     }
 }
 
-- (void)viewDidUnload {
-    [self setSearchBar:nil];
-    [super viewDidUnload];
-}
-
-
 - (IBAction)btnBadItemCount:(id)sender {
     BadItemVC *badItemView = [self.storyboard instantiateViewControllerWithIdentifier:@"BadItemScreen"];
     badItemView.orderLine = orderLineInfo;

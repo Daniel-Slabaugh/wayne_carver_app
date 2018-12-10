@@ -185,8 +185,4 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (void)viewDidUnload {
-    [super viewDidUnload];
-}
-
 @end

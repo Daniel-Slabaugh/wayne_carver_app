@@ -705,10 +705,10 @@
     
 }
 
-- (void)viewDidUnload {
-    [self setSearchBar:nil];
-    [super viewDidUnload];
-}
+//- (void)viewDidUnload {
+//    [self setSearchBar:nil];
+//    [super viewDidUnload];
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
