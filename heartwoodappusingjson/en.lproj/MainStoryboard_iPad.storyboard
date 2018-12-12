@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" colorMatched="YES" initialViewController="yVd-9y-lzr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" colorMatched="YES" initialViewController="yVd-9y-lzr">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Helvetica.ttc">
-            <string>Helvetica</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--IntroVC-->
         <scene sceneID="6wD-lR-Yyb">
@@ -69,7 +64,7 @@
                                     <segue destination="7if-RM-kzo" kind="push" id="rbb-kl-u1a"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ver. 1.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hp4-2K-JDT">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ver. 1.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hp4-2K-JDT">
                                 <rect key="frame" x="627" y="970" width="77" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
@@ -116,7 +111,7 @@
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
             </objects>
-            <point key="canvasLocation" x="-5643" y="-1523"/>
+            <point key="canvasLocation" x="-4408.59375" y="-892.38281249999989"/>
         </scene>
         <!--Address InfoVC-->
         <scene sceneID="9Xl-59-iPh">
@@ -195,7 +190,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rmv-WX-hC4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4743" y="-2667"/>
+            <point key="canvasLocation" x="-3705.46875" y="-1562.6953125"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bXe-S4-4s5">
@@ -217,7 +212,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k8O-b5-eZ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4743" y="-1523"/>
+            <point key="canvasLocation" x="-3705.46875" y="-892.38281249999989"/>
         </scene>
         <!--Settings-->
         <scene sceneID="ex0-X2-IC0">
@@ -294,7 +289,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MGD-lf-PVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5643" y="-407"/>
+            <point key="canvasLocation" x="-4408.59375" y="-238.47656249999997"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="jgW-Wt-ZpY">
@@ -388,7 +383,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rqv-h5-6Ok" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4743" y="-387"/>
+            <point key="canvasLocation" x="-3705.46875" y="-226.75781249999997"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1yy-hH-DPy">
@@ -406,7 +401,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fMc-qE-ant" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6538" y="-1523"/>
+            <point key="canvasLocation" x="-5107.8125" y="-892.38281249999989"/>
         </scene>
         <!--NameProg-->
         <scene sceneID="OCe-n0-TNd">
@@ -481,7 +476,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LeZ-zW-Cs4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3399" y="-2631"/>
+            <point key="canvasLocation" x="-2655.46875" y="-1541.6015625"/>
         </scene>
         <!--Customer TableVC-->
         <scene sceneID="6lt-xA-dJm">
@@ -574,7 +569,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-2274" y="-2667"/>
+            <point key="canvasLocation" x="-1776.5625" y="-1562.6953125"/>
         </scene>
         <!--Item TableVC-->
         <scene sceneID="Vq9-nr-53Q">
@@ -653,7 +648,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-1434" y="-2667"/>
+            <point key="canvasLocation" x="-1120.3125" y="-1562.6953125"/>
         </scene>
         <!--orderScreen-->
         <scene sceneID="QaJ-MM-mPF">
@@ -760,7 +755,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZQY-up-R18" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-582" y="-2667"/>
+            <point key="canvasLocation" x="-454.6875" y="-1562.6953125"/>
         </scene>
         <!--Editing TableVC-->
         <scene sceneID="kw1-4P-DFd">
@@ -842,7 +837,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-2274" y="-1523"/>
+            <point key="canvasLocation" x="-1776.5625" y="-892.38281249999989"/>
         </scene>
         <!--Editing ScreenVC-->
         <scene sceneID="sab-Zy-9I3">
@@ -1132,7 +1127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hRa-zD-clb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1434" y="-1523"/>
+            <point key="canvasLocation" x="-1120.3125" y="-892.38281249999989"/>
         </scene>
         <!--Edit Item TableVC-->
         <scene sceneID="Bi7-r1-9SY">
@@ -1211,7 +1206,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="271" y="-1523"/>
+            <point key="canvasLocation" x="211.71875" y="-892.38281249999989"/>
         </scene>
         <!--orderScreen-->
         <scene sceneID="x1D-lX-F2x">
@@ -1319,7 +1314,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hdc-B1-hnb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-582" y="-1523"/>
+            <point key="canvasLocation" x="-454.6875" y="-892.38281249999989"/>
         </scene>
         <!--orderScreen-->
         <scene sceneID="z9U-Kc-83j">
@@ -1422,7 +1417,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DRe-uI-teO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1131" y="-1523"/>
+            <point key="canvasLocation" x="883.59375" y="-892.38281249999989"/>
         </scene>
         <!--Contact InfoVC-->
         <scene sceneID="5j8-fn-9MJ">
@@ -1606,7 +1601,7 @@
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
             </objects>
-            <point key="canvasLocation" x="-5643" y="-2667"/>
+            <point key="canvasLocation" x="-4408.59375" y="-1562.6953125"/>
         </scene>
         <!--Wayne WebsiteVC-->
         <scene sceneID="Eat-Yk-rh8">
@@ -1658,7 +1653,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwR-KE-gig" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6538" y="-2675"/>
+            <point key="canvasLocation" x="-5107.8125" y="-1567.3828125"/>
         </scene>
         <!--Wayne Orders TableVC-->
         <scene sceneID="brM-lY-4Pr">
@@ -1680,7 +1675,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="ypR-hJ-KeG"/>
                                     <barButtonItem enabled="NO" style="plain" id="Cw3-2t-IGt">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="STF-DE-wCk">
-                                            <rect key="frame" x="153" y="2.5" width="231" height="39"/>
+                                            <rect key="frame" x="152.5" y="2.5" width="231" height="39"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <accessibility key="accessibilityConfiguration">
                                                 <accessibilityTraits key="traits" button="YES" notEnabled="YES"/>
@@ -1766,7 +1761,7 @@
                     </connections>
                 </datePicker>
             </objects>
-            <point key="canvasLocation" x="-4238" y="977"/>
+            <point key="canvasLocation" x="-3310.9375" y="572.4609375"/>
         </scene>
         <!--WCPDFViewController-->
         <scene sceneID="h5W-26-rjg">
@@ -1838,7 +1833,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1lI-OV-I4O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-74" y="-399"/>
+            <point key="canvasLocation" x="-57.8125" y="-233.78906249999997"/>
         </scene>
         <!--Wayne Orders Customer TableVC-->
         <scene sceneID="OMN-82-ET6">
@@ -1916,14 +1911,14 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-2546" y="977"/>
+            <point key="canvasLocation" x="-1989.0625" y="572.4609375"/>
         </scene>
         <!--Ord Detail-->
         <scene sceneID="fbo-2k-eCG">
             <objects>
                 <viewController storyboardIdentifier="WCOrdDetail" id="uuf-Jn-4dG" customClass="WCOrdDetail" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qcu-5H-EiA">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kAj-Az-Cs6">
@@ -1939,31 +1934,31 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sold to:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DJa-ss-LJA">
-                                <rect key="frame" x="215" y="133" width="110" height="39"/>
+                                <rect key="frame" x="215" y="78" width="110" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ship to:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3aQ-gb-P8x">
-                                <rect key="frame" x="218" y="541" width="104" height="39"/>
+                                <rect key="frame" x="218" y="319" width="104" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bxJ-TK-osQ">
-                                <rect key="frame" x="20" y="239" width="500" height="172"/>
+                                <rect key="frame" x="20" y="126" width="500" height="172"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ffl-OK-fFH">
-                                <rect key="frame" x="20" y="694" width="500" height="172"/>
+                                <rect key="frame" x="20" y="365" width="500" height="172"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ship Method: Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xy5-Zd-oZ0">
-                                <rect key="frame" x="0.0" y="44" width="540" height="40"/>
+                                <rect key="frame" x="0.0" y="26" width="540" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1980,37 +1975,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NS1-Qb-fKz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3392" y="2179"/>
+            <point key="canvasLocation" x="-2650" y="1276.7578125"/>
         </scene>
         <!--Login-->
         <scene sceneID="ZYq-hj-HrQ">
             <objects>
                 <viewController storyboardIdentifier="login" id="U7d-Te-zMh" customClass="Login" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aV0-Ti-yt7">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Please Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="WWg-qL-mPd">
-                                <rect key="frame" x="114" y="67" width="540" height="39"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Please Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="WWg-qL-mPd">
+                                <rect key="frame" x="0.0" y="35" width="540" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="ew6-9I-2Fd">
-                                <rect key="frame" x="349" y="247" width="192" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="ew6-9I-2Fd">
+                                <rect key="frame" x="261" y="144" width="192" height="30"/>
                                 <color key="textColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Password:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xfg-Pi-CYf">
-                                <rect key="frame" x="176" y="224" width="142" height="64"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Password:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xfg-Pi-CYf">
+                                <rect key="frame" x="88" y="127" width="142" height="64"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                 <color key="textColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="shadowColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hCm-VT-Lom">
-                                <rect key="frame" x="286" y="384" width="197" height="77"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hCm-VT-Lom">
+                                <rect key="frame" x="198" y="381" width="197" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <state key="normal" title="Login">
@@ -2033,14 +2028,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LcM-qw-fT1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3352" y="-331"/>
+            <point key="canvasLocation" x="-2618.75" y="-193.9453125"/>
         </scene>
         <!--Edit Detail ScreenVC-->
         <scene sceneID="tZP-tt-hEs">
             <objects>
                 <viewController storyboardIdentifier="EditDetailScreen" id="Gq4-LU-SKy" customClass="EditDetailScreenVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TJb-oX-XJ8">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qwB-0T-dKh">
@@ -2056,7 +2051,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Zlu-Ea-Hhu">
-                                <rect key="frame" x="8" y="10" width="753" height="957"/>
+                                <rect key="frame" x="8" y="10" width="525" height="553"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2084,14 +2079,14 @@
                     </date>
                 </datePicker>
             </objects>
-            <point key="canvasLocation" x="-1474" y="-399"/>
+            <point key="canvasLocation" x="-1151.5625" y="-233.78906249999997"/>
         </scene>
         <!--Edit Date ScreenVC-->
         <scene sceneID="0dV-06-4Ig">
             <objects>
                 <viewController storyboardIdentifier="EditDateScreen" id="YVZ-R9-kzt" customClass="EditDateScreenVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h9N-uT-4OL">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" id="Xxd-rd-pxm">
@@ -2102,19 +2097,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Request Ship Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X6o-oM-CQZ">
-                                <rect key="frame" x="85" y="34" width="370" height="48"/>
+                                <rect key="frame" x="85" y="20" width="370" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ASAP:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ypb-lG-7aO">
-                                <rect key="frame" x="313" y="282" width="119" height="36"/>
+                                <rect key="frame" x="313" y="167" width="119" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="hcn-i9-IoK">
-                                <rect key="frame" x="468" y="282" width="51" height="31"/>
+                                <rect key="frame" x="468" y="167" width="51" height="31"/>
                                 <color key="onTintColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="switchAsap:" destination="YVZ-R9-kzt" eventType="valueChanged" id="vjQ-HZ-KqU"/>
@@ -2122,7 +2117,7 @@
                                 </connections>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Kbf-2l-5Hm">
-                                <rect key="frame" x="259" y="122" width="22" height="22"/>
+                                <rect key="frame" x="259" y="73" width="22" height="22"/>
                                 <color key="backgroundColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="5"/>
                                 <state key="normal">
@@ -2137,19 +2132,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Options:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aqn-7a-sDb">
-                                <rect key="frame" x="20" y="304" width="161" height="47"/>
+                                <rect key="frame" x="20" y="178" width="161" height="47"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Not Before:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0QZ-Yv-S9C">
-                                <rect key="frame" x="259" y="372" width="173" height="36"/>
+                                <rect key="frame" x="259" y="220" width="173" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="EI1-LU-Ou6">
-                                <rect key="frame" x="468" y="373" width="51" height="31"/>
+                                <rect key="frame" x="468" y="221" width="51" height="31"/>
                                 <color key="onTintColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="switchNotBefore:" destination="YVZ-R9-kzt" eventType="valueChanged" id="BuH-3m-1VR"/>
@@ -2157,7 +2152,7 @@
                                 </connections>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="V0O-an-jOS">
-                                <rect key="frame" x="20" y="445" width="196" height="175"/>
+                                <rect key="frame" x="20" y="233" width="196" height="175"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                 <state key="normal" title="Done">
                                     <color key="titleColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2195,24 +2190,24 @@
                     </connections>
                 </datePicker>
             </objects>
-            <point key="canvasLocation" x="-890" y="-399"/>
+            <point key="canvasLocation" x="-695.3125" y="-233.78906249999997"/>
         </scene>
         <!--Bad ItemVC-->
         <scene sceneID="cCt-S5-6TI">
             <objects>
                 <viewController storyboardIdentifier="BadItemScreen" id="WrO-t8-cQ0" customClass="BadItemVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9gi-q6-BAn">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Defective Item Count" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CFz-od-GgS">
-                                <rect key="frame" x="85" y="34" width="371" height="48"/>
+                                <rect key="frame" x="85" y="20" width="371" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="R0h-mX-c4L">
-                                <rect key="frame" x="172" y="144" width="196" height="175"/>
+                                <rect key="frame" x="172" y="75" width="196" height="175"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                 <state key="normal" title="Done">
                                     <color key="titleColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2223,7 +2218,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Defective Items" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gBx-7I-cY4">
-                                <rect key="frame" x="85" y="429" width="370" height="165"/>
+                                <rect key="frame" x="85" y="227" width="370" height="165"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <color key="textColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -2247,7 +2242,7 @@
                     </connections>
                 </pickerView>
             </objects>
-            <point key="canvasLocation" x="356" y="-2465"/>
+            <point key="canvasLocation" x="271" y="-1499"/>
         </scene>
         <!--Posted ScreenVC-->
         <scene sceneID="rBe-fv-u6R">
@@ -2407,14 +2402,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QDr-Le-ZOu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2274" y="-387"/>
+            <point key="canvasLocation" x="-1776.5625" y="-226.75781249999997"/>
         </scene>
         <!--Price Screen-->
         <scene sceneID="Xkz-x5-vln">
             <objects>
                 <viewController storyboardIdentifier="PDFPrice" id="vj0-fY-5Hn" customClass="PDFPriceScreen" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b9B-9J-YOz">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4Il-BU-SCJ">
@@ -2430,7 +2425,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="22" sectionFooterHeight="22" id="ycB-rE-8ej">
-                                <rect key="frame" x="8" y="57" width="753" height="821"/>
+                                <rect key="frame" x="8" y="57" width="525" height="417"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2438,10 +2433,10 @@
                                 <color key="sectionIndexTrackingBackgroundColor" red="0.76078431369999999" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="55" id="Pm8-hx-iC1">
-                                        <rect key="frame" x="0.0" y="22" width="753" height="55"/>
+                                        <rect key="frame" x="0.0" y="22" width="525" height="55"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pm8-hx-iC1" id="Ihu-x4-aMW">
-                                            <rect key="frame" x="0.0" y="0.0" width="753" height="54.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="525" height="54.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -2464,13 +2459,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Set Estimated Prices" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6Ev-cs-Uvl">
-                                <rect key="frame" x="56" y="12" width="429" height="47"/>
+                                <rect key="frame" x="56" y="7" width="429" height="47"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                 <color key="textColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Note: All actual prices are set by Wayne Carver" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iDK-hB-GMU">
-                                <rect key="frame" x="26" y="825" width="488" height="53"/>
+                                <rect key="frame" x="26" y="482" width="488" height="53"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -2485,14 +2480,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RGk-0Y-fC6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1164" y="333"/>
+            <point key="canvasLocation" x="-909.375" y="195.1171875"/>
         </scene>
         <!--Date ScreenVC-->
         <scene sceneID="Nxx-oE-HeP">
             <objects>
                 <viewController storyboardIdentifier="WCDateScreen" id="S8I-QT-cMd" customClass="WCDateScreenVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cuU-NY-eaV">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="drY-jv-Qty">
@@ -2504,13 +2499,13 @@
                                 <color key="shadowColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Pick Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rtn-9E-tmL">
-                                <rect key="frame" x="85" y="34" width="370" height="48"/>
+                                <rect key="frame" x="85" y="20" width="370" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ajy-lu-uBy">
-                                <rect key="frame" x="172" y="512" width="196" height="130"/>
+                                <rect key="frame" x="172" y="281" width="196" height="130"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                 <state key="normal" title="Done">
                                     <color key="titleColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2551,18 +2546,18 @@
                     </connections>
                 </datePicker>
             </objects>
-            <point key="canvasLocation" x="-4238" y="2187"/>
+            <point key="canvasLocation" x="-3310.9375" y="1281.4453125"/>
         </scene>
         <!--Track Num-->
         <scene sceneID="ULp-bt-UGp">
             <objects>
                 <viewController storyboardIdentifier="WCTrackNum" id="AxW-UI-vHC" customClass="WCTrackNum" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G3f-TH-chm">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="22" sectionFooterHeight="22" id="l1b-8d-a4b">
-                                <rect key="frame" x="8" y="57" width="753" height="821"/>
+                                <rect key="frame" x="8" y="57" width="525" height="417"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2570,10 +2565,10 @@
                                 <color key="sectionIndexTrackingBackgroundColor" red="0.76078431369999999" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="55" id="tcG-14-Lyx">
-                                        <rect key="frame" x="0.0" y="22" width="753" height="55"/>
+                                        <rect key="frame" x="0.0" y="22" width="525" height="55"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tcG-14-Lyx" id="IJH-M9-80E">
-                                            <rect key="frame" x="0.0" y="0.0" width="753" height="54.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="525" height="54.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -2584,13 +2579,13 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tracking Numbers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1lR-H2-VN8">
-                                <rect key="frame" x="56" y="12" width="429" height="47"/>
+                                <rect key="frame" x="56" y="7" width="429" height="47"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                 <color key="textColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pah-y6-TPW">
-                                <rect key="frame" x="26" y="825" width="488" height="53"/>
+                                <rect key="frame" x="26" y="482" width="488" height="53"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -2617,7 +2612,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GZf-GU-9yE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2546" y="2179"/>
+            <point key="canvasLocation" x="-1989.0625" y="1276.7578125"/>
         </scene>
         <!--play-->
         <scene sceneID="Ksn-rM-K3N">
@@ -2702,7 +2697,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Zv-cl-Fqj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3392" y="-3869"/>
+            <point key="canvasLocation" x="-2650" y="-2266.9921875"/>
         </scene>
         <!--Welcome-->
         <scene sceneID="mbH-hq-Zsf">
@@ -2804,7 +2799,7 @@
                                 <color key="textColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="f0T-fA-ANR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="f0T-fA-ANR">
                                 <rect key="frame" x="51" y="320" width="666" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="(click here for list)">
@@ -2824,7 +2819,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="21D-jN-lHA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3399" y="-1523"/>
+            <point key="canvasLocation" x="-2655.46875" y="-892.38281249999989"/>
         </scene>
         <!--GenMerch-->
         <scene sceneID="8OF-rh-r5W">
@@ -2839,7 +2834,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" red="0.76078431369999999" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" keyboardDismissMode="interactive" id="GjU-cy-cBc">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" keyboardDismissMode="interactive" id="GjU-cy-cBc">
                                 <rect key="frame" x="0.0" y="-293" width="768" height="1460"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -3065,7 +3060,7 @@
                                             <action selector="btnSave:" destination="C2y-a0-htg" eventType="touchUpInside" id="Z9e-Ju-FoI"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4g2-ez-JSu">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4g2-ez-JSu">
                                         <rect key="frame" x="323" y="1261" width="122" height="35"/>
                                         <state key="normal" title="(Tap to Change)">
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3130,7 +3125,7 @@
                                             <action selector="btnClear:" destination="C2y-a0-htg" eventType="touchUpInside" id="rTC-BI-MN9"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" id="TEV-U3-p3a">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" id="TEV-U3-p3a">
                                         <rect key="frame" x="0.0" y="1236" width="769" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3152,7 +3147,7 @@
                                             <action selector="btnChangeStore:" destination="7im-Po-j7x" eventType="touchUpInside" id="eYA-zZ-40y"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="oxF-ot-Yhx">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="oxF-ot-Yhx">
                                         <rect key="frame" x="212" y="1236" width="345" height="60"/>
                                         <color key="backgroundColor" red="0.76078431369999999" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -3208,7 +3203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lo7-BH-DyC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1434" y="-3875"/>
+            <point key="canvasLocation" x="-1120.3125" y="-2270.5078125"/>
         </scene>
         <!--work-->
         <scene sceneID="eag-V4-90c">
@@ -3365,7 +3360,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dV5-XL-ubt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2279" y="-3875"/>
+            <point key="canvasLocation" x="-1780.46875" y="-2270.5078125"/>
         </scene>
         <!--GenMerch-->
         <scene sceneID="RMl-Hr-HMx">
@@ -3561,18 +3556,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vCc-FF-g3t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-596" y="-3875"/>
+            <point key="canvasLocation" x="-465.625" y="-2270.5078125"/>
         </scene>
         <!--ItemVC-->
         <scene sceneID="9dc-jq-K97">
             <objects>
                 <viewController storyboardIdentifier="GMItemVC" id="x2E-XJ-qKS" customClass="GMItemVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L0z-4d-V33">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="22" sectionFooterHeight="22" id="uk0-L4-7YP">
-                                <rect key="frame" x="0.0" y="246" width="540" height="532"/>
+                                <rect key="frame" x="0.0" y="44" width="540" height="532"/>
                                 <color key="backgroundColor" red="0.76078431369999999" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.76078431369999999" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3595,7 +3590,7 @@
                                 </connections>
                             </tableView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="KKW-OZ-SnF" userLabel="Customers">
-                                <rect key="frame" x="0.0" y="980" width="540" height="44"/>
+                                <rect key="frame" x="0.0" y="576" width="540" height="44"/>
                                 <items>
                                     <barButtonItem title="Cancel" id="Thd-4M-cKw">
                                         <color key="tintColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3623,7 +3618,7 @@
                                 <color key="tintColor" red="0.76078431369999999" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </toolbar>
                             <searchBar contentMode="redraw" id="go0-Fr-C63">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="540" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.76078431369999999" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="barTintColor" red="0.76078431369999999" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3655,18 +3650,18 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="356" y="-4804"/>
+            <point key="canvasLocation" x="278.125" y="-2814.84375"/>
         </scene>
         <!--Art NameVC-->
         <scene sceneID="rh1-C6-6OA">
             <objects>
                 <viewController storyboardIdentifier="GMArtNameVC" id="Jog-XL-Kv3" customClass="GMArtNameVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aw2-lJ-Id5">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="22" sectionFooterHeight="22" id="EFO-VP-rEp">
-                                <rect key="frame" x="0.0" y="448" width="540" height="576"/>
+                                <rect key="frame" x="0.0" y="44" width="540" height="576"/>
                                 <color key="backgroundColor" red="0.76078431369999999" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.76078431369999999" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3689,7 +3684,7 @@
                                 </connections>
                             </tableView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="6yt-LL-3tY" userLabel="Customers">
-                                <rect key="frame" x="0.0" y="980" width="540" height="44"/>
+                                <rect key="frame" x="0.0" y="576" width="540" height="44"/>
                                 <items>
                                     <barButtonItem title="Cancel" id="lyr-Bc-ZJX">
                                         <color key="tintColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3739,7 +3734,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="356" y="-3673"/>
+            <point key="canvasLocation" x="278.125" y="-2152.1484375"/>
         </scene>
         <!--Editing TableVC-->
         <scene sceneID="0Y7-H5-TBg">
@@ -3821,7 +3816,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-1434" y="-5006"/>
+            <point key="canvasLocation" x="-1120.3125" y="-2933.203125"/>
         </scene>
         <!--play-->
         <scene sceneID="O4B-bO-twa">
@@ -4108,7 +4103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IqE-Gu-XZR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2279" y="-5006"/>
+            <point key="canvasLocation" x="-1780.46875" y="-2933.203125"/>
         </scene>
         <!--Wayne Orders ScreenVC-->
         <scene sceneID="6Qy-Qh-UBm">
@@ -4118,11 +4113,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="gradient.png" id="ZNW-vE-B3X">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="gradient.png" id="ZNW-vE-B3X">
                                 <rect key="frame" x="-116" y="0.0" width="1000" height="1000"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" id="Ozc-Db-qzB">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Ozc-Db-qzB">
                                 <rect key="frame" x="0.0" y="-13" width="768" height="1358"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -4266,7 +4261,7 @@
                                             <action selector="btnExit:" destination="Z0z-56-t3e" eventType="touchUpInside" id="Kst-P2-4Nt"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cbp-Ba-er0">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cbp-Ba-er0">
                                         <rect key="frame" x="22" y="226" width="726" height="42"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                         <color key="textColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -4293,7 +4288,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dLk-OG-ZQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3411" y="965"/>
+            <point key="canvasLocation" x="-2664.84375" y="565.4296875"/>
         </scene>
         <!--Attempted OrdersVC-->
         <scene sceneID="lDE-MA-Eyp">
@@ -4372,7 +4367,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-5530" y="829"/>
+            <point key="canvasLocation" x="-4320.3125" y="485.74218749999994"/>
         </scene>
     </scenes>
     <resources>
@@ -4385,7 +4380,7 @@
         <image name="white.jpg" width="1278" height="990"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rbb-kl-u1a"/>
+        <segue reference="vmV-8N-3hn"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.76078431369999999" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

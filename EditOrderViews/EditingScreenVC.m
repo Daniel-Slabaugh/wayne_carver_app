@@ -658,7 +658,7 @@
                                                    message:@"This enables you to send a copy of the order to other people."
                                                   delegate:self
                                          cancelButtonTitle:@"Cancel"
-                                         otherButtonTitles:@"Order Summarized", @"Order Detailed", nil];
+                                         otherButtonTitles:@"Create PDF", nil];
     alertAction = PDF;
     [alert show];
 }
@@ -677,7 +677,7 @@
         {
             orderHeaderInfo.PONum = txtPONumber.text;
             orderHeaderInfo.Notes = txtNotes.text;
-            orderHeaderInfo.PDFType = @"SUMMARY";
+            orderHeaderInfo.PDFType = @"FULL";
             WCPDFViewController *pdfView = [self.storyboard instantiateViewControllerWithIdentifier:@"WCPDFViewController"];
             //            pdfView.PDFType = @"SUMMARY";
             //            NSLog(@"PDFType: %@", pdfView.PDFType);
