@@ -14,7 +14,7 @@
 
 @interface AddressTableVC : UIViewController <UITableViewDataSource, UITableViewDelegate>
 {
-    IBOutlet UITableView * itemTableView;
+    IBOutlet UITableView * addressTableView;
 }
 
 - (IBAction)btnback:(id)sender;

@@ -93,7 +93,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     OrderScreenVC *orderScreen = [self.storyboard instantiateViewControllerWithIdentifier:@"orderScreen"];
-    orderScreen.itemInfo = [itemsArray objectAtIndex:indexPath.row];
+    orderScreen.itemInfo = [addressArray objectAtIndex:indexPath.row];
     [self.navigationController pushViewController:orderScreen animated:YES];
     
 }

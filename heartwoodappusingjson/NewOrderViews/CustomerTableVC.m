@@ -183,7 +183,7 @@
     Customer* customer = (Customer*)[arrayForLetter objectAtIndex:indexPath.row];
     
     if ([status isEqualToString:NP]) {
-        ItemTableVC *itemTableView = [self.storyboard instantiateViewControllerWithIdentifier:@"itemTable"];
+        ItemTableVC *itemTableView = [self.storyboard instantiateViewControllerWithIdentifier:@"addressTable"];
         itemTableView.customerInfo = customer;
         [self.navigationController pushViewController:itemTableView animated:YES];
     }
