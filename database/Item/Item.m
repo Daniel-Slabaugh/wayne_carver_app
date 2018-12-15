@@ -11,6 +11,7 @@
 
 @implementation Item
 @synthesize CustNum;
+@synthesize Address;
 @synthesize ProgName;
 @synthesize ItemNo;
 @synthesize Nameset;
@@ -43,6 +44,7 @@
     Item * model = [[Item alloc] init];
     
     model.CustNum = [NSString stringWithFormat:@"%s", (char *)sqlite3_column_text(dbStmt, 0)];
+    model.Address = [NSString stringWithFormat:@"%s", (char *)sqlite3_column_text(dbStmt, 0)];
     model.ProgName = [NSString stringWithFormat:@"%s", (char *)sqlite3_column_text(dbStmt, 1)];
     model.ItemNo = [NSString stringWithFormat:@"%s", (char *)sqlite3_column_text(dbStmt, 2)];
     model.Nameset = [NSString stringWithFormat:@"%s", (char *)sqlite3_column_text(dbStmt, 3)];
@@ -131,6 +133,10 @@
         data.CustNum = [[data.CustNum componentsSeparatedByCharactersInSet:charactersToRemove ]
                         componentsJoinedByString:@"''"];
     }
+    if ((NSNull *)data.Address != [NSNull null]) {
+        data.Address = [[data.Address componentsSeparatedByCharactersInSet:charactersToRemove ]
+                         componentsJoinedByString:@"''"];
+    }
     if ((NSNull *)data.ProgName != [NSNull null]) {
         data.ProgName = [[data.ProgName componentsSeparatedByCharactersInSet:charactersToRemove ]
                          componentsJoinedByString:@"''"];
@@ -152,15 +158,17 @@
                         componentsJoinedByString:@"''"];
     }    
     
-	NSString *query = [NSString stringWithFormat:@"insert into %@(%@, %@, %@, %@, %@, %@) values('%@', '%@', '%@', '%@', '%@', '%@')",
+	NSString *query = [NSString stringWithFormat:@"insert into %@(%@, %@, %@, %@, %@, %@, %@) values('%@', '%@', '%@', '%@', '%@', '%@', '%@')",
                        TBL_ITEM,
                        FLD_CUSTNUM,
+                       FLD_ADDRESS,
                        FLD_PROGNAME,
                        FLD_ITEMNO,
                        FLD_NAMESET,
                        FLD_MAD,
                        FLD_DESC,
                        data.CustNum,
+                       data.Address,
                        data.ProgName,
                        data.ItemNo,
                        data.Nameset,
