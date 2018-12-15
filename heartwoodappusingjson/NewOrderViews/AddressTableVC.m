@@ -1,211 +1,106 @@
 //
-//  CustomerTableVC.m
-//  wayne mobile
+//  AddressTableVC.m
+//  HeartwoodApp
 //
-//  Created by Daniel Slabaugh on 7/5/13.
+//  Created by Daniel Slabaugh on 12/14/18.
 //  Copyright (c) 2013 Daniel Slabaugh. All rights reserved.
 //
 
-#import "CustomerTableVC.h"
-#import "ItemTableVC.h"
-#import "Customer.h"
-#import "GMBillingShippingInfoVC.h"
+#import "AddressTableVC.h"
+#import "Item.h"
 
-#define NP  @"NameProg"
-#define GM  @"GeneralMerchandise"
+#import "OrderScreenVC.h"
 
-
-@interface CustomerTableVC ()
-
+@interface AddressTableVC ()
 
 @end
 
-@implementation CustomerTableVC
-@synthesize allTableData;
-@synthesize filteredTableData;
-@synthesize letters;
-@synthesize searchBar;
-@synthesize isFiltered;
-@synthesize status;
-@synthesize gmorderHeaderInfo;
+@implementation AddressTableVC
+@synthesize addressArray;
+@synthesize customerInfo;
 
 
-
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.navigationController.navigationBarHidden = YES;
     }
     return self;
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
-    NSMutableArray * unsortedCustomers = [Customer getAllCustomers];
-    self.allTableData = [unsortedCustomers sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
-        NSString *first = [(Customer*)a CustName];
-        NSString *second = [(Customer*)b CustName];
+    NSMutableArray * unsortedStores = [Address getAddressesWhere:customerInfo.CustNum];
+    NSArray * sortedStores = [[NSArray alloc] initWithArray:[unsortedStores sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
+        NSString *first = [(Address*)a StoreID];
+        NSString *second = [(Address*)b StoreID];
         return [first compare:second];
-    }];
-    
-    
-    [customerTableView reloadData];
-    [self updateTableData:@""];
+    }]];
+    self.addressArray = [NSMutableArray arrayWithArray:sortedStores];
+    [itemTableView reloadData];
 }
 
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    // Each letter is a section title
-    NSString* key = [letters objectAtIndex:section];
-    return key;
-}
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    // Return the number of letters in our letter array. Each letter represents a section.
-    return letters.count;
-}
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    // Returns the number of items in the array associated with the letter for this section.
-    NSString* letter = [letters objectAtIndex:section];
-    NSArray* arrayForLetter = (NSArray*)[filteredTableData objectForKey:letter];
-    return arrayForLetter.count;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
-        else
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-    }
-    
-    // Grab the object for the specified row and section
-    NSString* letter = [letters objectAtIndex:indexPath.section];
-    NSArray* arrayForLetter = (NSArray*)[filteredTableData objectForKey:letter];
-    Customer* customer = (Customer*)[arrayForLetter objectAtIndex:indexPath.row];
-    
-    cell.textLabel.text = customer.CustName;
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-    {
-        [cell.textLabel setFont:[UIFont boldSystemFontOfSize:20]];
-        // The device is an iPad running iPhone 3.2 or later.
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"Customer # %@",customer.CustNum];
-    }
-    else
-    {
-        // The device is an iPhone or iPod touch.
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"Cust # %@",customer.CustNum];
-        [cell.textLabel setFont:[UIFont systemFontOfSize:14]];
-        [cell.textLabel setNumberOfLines:2];
-    }
-    
-    
-    return cell;
-}
-
-- (void)updateTableData:(NSString*)searchString {
-    filteredTableData = [[NSMutableDictionary alloc] init];
-    
-    for (Customer* customer in allTableData)
-    {
-        bool isMatch = false;
-        if(searchString.length == 0)
-        {
-            // If our search string is empty, everything is a match
-            isMatch = true;
-        }
-        else
-        {
-            // If we have a search string, check to see if it matches the food's name or description
-            NSRange nameRange = [customer.CustName rangeOfString:searchString options:NSCaseInsensitiveSearch];
-            NSRange descriptionRange = [customer.CustNum rangeOfString:searchString options:NSCaseInsensitiveSearch];
-            if(nameRange.location != NSNotFound || descriptionRange.location != NSNotFound)
-                isMatch = true;
-        }
-        
-        // If we have a match...
-        if(isMatch)
-        {
-            // Find the first letter of the food's name. This will be its group
-            NSString* firstLetter = [customer.CustName substringToIndex:1];
-            
-            // Check to see if we already have an array for this group
-            NSMutableArray* arrayForLetter = (NSMutableArray*)[filteredTableData objectForKey:firstLetter];
-            if(arrayForLetter == nil)
-            {
-                // If we don't, create one, and add it to our dictionary
-                arrayForLetter = [[NSMutableArray alloc] init];
-                [filteredTableData setValue:arrayForLetter forKey:firstLetter];
-            }
-            
-            // Finally, add the food to this group's array
-            [arrayForLetter addObject:customer];
-        }
-    }
-    
-    // Make a copy of our dictionary's keys, and sort them
-    letters = [[NSArray alloc] initWithArray:[[filteredTableData allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)]];
-    
-    // Finally, refresh the table
-    [customerTableView reloadData];
-}
-
-- (void)searchBar:(UISearchBar*)searchBar textDidChange:(NSString*)text {
-    [self updateTableData:text];
-}
-
-- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
-    return letters;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString*)title atIndex:(NSInteger)index {
-    return index;
-}
-
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    // Grab the object for the specified row and section
-    NSString* letter = [letters objectAtIndex:indexPath.section];
-    NSArray* arrayForLetter = (NSArray*)[filteredTableData objectForKey:letter];
-    Customer* customer = (Customer*)[arrayForLetter objectAtIndex:indexPath.row];
-    
-    if ([status isEqualToString:NP]) {
-        ItemTableVC *itemTableView = [self.storyboard instantiateViewControllerWithIdentifier:@"itemTable"];
-        itemTableView.customerInfo = customer;
-        [self.navigationController pushViewController:itemTableView animated:YES];
-    }
-    if ([status isEqualToString:GM]) {
-        gmorderHeaderInfo.CustNum = customer.CustNum;
-        [self.navigationController popViewControllerAnimated:YES];
-    }
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    // Check to see whether the normal table or search results table is being displayed and return the count from the appropriate array
+    return self.addressArray.count;
 }
+
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString * cellID = @"ItemCellID";
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    if (cell == nil) {
+        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellID];
+        else
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
+    }
+    
+    
+    Item * item = nil;
+    item = [self.addressArray objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"%@: %@", item.ItemNo, item.Description];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", item.MAD];
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        // The device is an iPad running iPhone 3.2 or later.
+        [cell.textLabel setFont:[UIFont boldSystemFontOfSize:20]];
+        [cell.detailTextLabel setMinimumScaleFactor:.5];
+        [cell.detailTextLabel setAdjustsFontSizeToFitWidth:YES];
+    }
+    else
+    {
+        // The device is an iPhone or iPod touch.
+        [cell.textLabel setFont:[UIFont systemFontOfSize:14]];
+    }
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    OrderScreenVC *orderScreen = [self.storyboard instantiateViewControllerWithIdentifier:@"orderScreen"];
+    orderScreen.itemInfo = [itemsArray objectAtIndex:indexPath.row];
+    [self.navigationController pushViewController:orderScreen animated:YES];
+    
+}
+
 
 - (IBAction)btnback:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
-
-//- (void)viewDidUnload {
-//    [self setSearchBar:nil];
-//    [super viewDidUnload];
-//}
-
-//To enable rotation
-- (BOOL)shouldAutorotate {
-    return YES;
-}
-
 
 @end

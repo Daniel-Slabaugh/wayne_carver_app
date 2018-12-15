@@ -124,6 +124,7 @@
 		FDD37FED1D106DE600FF9577 /* AttemptedOrderHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD37FEB1D106DE600FF9577 /* AttemptedOrderHeader.m */; };
 		FDD37FF11D106F8D00FF9577 /* AttemptedOrderLine.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD37FF01D106F8D00FF9577 /* AttemptedOrderLine.m */; };
 		FDD37FF51D10947B00FF9577 /* AttemptedOrderDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD37FF41D10947B00FF9577 /* AttemptedOrderDetail.m */; };
+		FDD6B0E521C4888A00E33F58 /* AddressTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD6B0E321C4888900E33F58 /* AddressTableVC.m */; };
 		FDDB1B7017D241280066EABC /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDB1B6F17D241280066EABC /* Login.m */; };
 		FDECF3FB17832B7700316050 /* IP.m in Sources */ = {isa = PBXBuildFile; fileRef = FDECF3FA17832B7700316050 /* IP.m */; };
 		FDECF3FF1783329400316050 /* IPSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDECF3FE1783329400316050 /* IPSettingsViewController.m */; };
@@ -345,6 +346,8 @@
 		FDD37FF01D106F8D00FF9577 /* AttemptedOrderLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttemptedOrderLine.m; sourceTree = "<group>"; };
 		FDD37FF31D10947B00FF9577 /* AttemptedOrderDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttemptedOrderDetail.h; sourceTree = "<group>"; };
 		FDD37FF41D10947B00FF9577 /* AttemptedOrderDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttemptedOrderDetail.m; sourceTree = "<group>"; };
+		FDD6B0E321C4888900E33F58 /* AddressTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddressTableVC.m; path = heartwoodappusingjson/NewOrderViews/AddressTableVC.m; sourceTree = SOURCE_ROOT; };
+		FDD6B0E421C4888900E33F58 /* AddressTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddressTableVC.h; path = heartwoodappusingjson/NewOrderViews/AddressTableVC.h; sourceTree = SOURCE_ROOT; };
 		FDDB1B6E17D241280066EABC /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Login.h; path = Login/Login.h; sourceTree = "<group>"; };
 		FDDB1B6F17D241280066EABC /* Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Login.m; path = Login/Login.m; sourceTree = "<group>"; };
 		FDECF3F917832B7700316050 /* IP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IP.h; sourceTree = "<group>"; };
@@ -629,6 +632,8 @@
 			children = (
 				FD5C8C9317871DBC008DEE80 /* CustomerTableVC.h */,
 				FD5C8C9417871DBC008DEE80 /* CustomerTableVC.m */,
+				FDD6B0E421C4888900E33F58 /* AddressTableVC.h */,
+				FDD6B0E321C4888900E33F58 /* AddressTableVC.m */,
 				FD63B68F1795ACDD008541A6 /* ItemTableVC.h */,
 				FD63B6901795ACDD008541A6 /* ItemTableVC.m */,
 				FD8A5F211798DF2B00D8EC55 /* OrderScreenVC.h */,
@@ -1197,6 +1202,7 @@
 				FD96A09417A48706009639E7 /* ContactInfoVC.m in Sources */,
 				FD96A09517A48706009639E7 /* WayneWebsiteVC.m in Sources */,
 				FD96A09817A48751009639E7 /* AddressInfoVC.m in Sources */,
+				FDD6B0E521C4888A00E33F58 /* AddressTableVC.m in Sources */,
 				FD96A0A217A83E26009639E7 /* EditOrderScreenVC.m in Sources */,
 				FD96A0C317A843EE009639E7 /* Customer.m in Sources */,
 				FD96A0C417A843EE009639E7 /* DBManager.m in Sources */,
