@@ -19,6 +19,7 @@
 - (IBAction)btnback:(id)sender;
 
 @property (nonatomic, retain) Customer * customerInfo;
+@property (nonatomic, retain) Address * addressInfo;
 @property (nonatomic, retain) NSMutableArray * itemsArray;
 
 

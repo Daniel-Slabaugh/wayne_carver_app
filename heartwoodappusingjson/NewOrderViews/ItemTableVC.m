@@ -18,6 +18,7 @@
 @implementation ItemTableVC
 @synthesize itemsArray;
 @synthesize customerInfo;
+@synthesize addressInfo;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -95,6 +96,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     OrderScreenVC *orderScreen = [self.storyboard instantiateViewControllerWithIdentifier:@"orderScreen"];
     orderScreen.itemInfo = [itemsArray objectAtIndex:indexPath.row];
+#warning add address here
     [self.navigationController pushViewController:orderScreen animated:YES];
     
 }

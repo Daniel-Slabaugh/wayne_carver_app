@@ -8,6 +8,7 @@
 
 #import "AddressTableVC.h"
 #import "Item.h"
+#import "ItemTableVC.h"
 
 #import "OrderScreenVC.h"
 
@@ -18,6 +19,7 @@
 @implementation AddressTableVC
 @synthesize addressArray;
 @synthesize customerInfo;
+
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -40,7 +42,7 @@
         return [first compare:second];
     }]];
     self.addressArray = [NSMutableArray arrayWithArray:sortedStores];
-    [itemTableView reloadData];
+    [addressTableView reloadData];
 }
 
 
@@ -71,11 +73,11 @@
     }
     
     
-    Item * item = nil;
-    item = [self.addressArray objectAtIndex:indexPath.row];
+    Address * store = nil;
+    store = [self.addressArray objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@: %@", item.ItemNo, item.Description];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", item.MAD];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@: %@", store.StoreID, store.Addr1];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@, %@ %@", store.City, store.State, store.Zip];
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
     {
         // The device is an iPad running iPhone 3.2 or later.
@@ -92,10 +94,10 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    OrderScreenVC *orderScreen = [self.storyboard instantiateViewControllerWithIdentifier:@"orderScreen"];
-    orderScreen.itemInfo = [addressArray objectAtIndex:indexPath.row];
-    [self.navigationController pushViewController:orderScreen animated:YES];
-    
+    ItemTableVC *itemTableView = [self.storyboard instantiateViewControllerWithIdentifier:@"itemTable"];
+    itemTableView.addressInfo = [addressArray objectAtIndex:indexPath.row];
+    itemTableView.customerInfo = self.customerInfo;
+    [self.navigationController pushViewController:itemTableView animated:YES];
 }
 
 

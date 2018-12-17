@@ -490,7 +490,7 @@
                   moduleName = "Wayne Mobile"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/danielslabaugh/Documents/Heartwood/wayne_carver_app/Wayne_Mobile_2_4_3/EditOrderViews/EditingScreenVC.m"
-                  timestampString = "566528027.058749"
+                  timestampString = "566773790.145614"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "625"
@@ -505,7 +505,7 @@
                   moduleName = "Wayne Mobile"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/danielslabaugh/Documents/Heartwood/wayne_carver_app/Wayne_Mobile_2_4_3/EditOrderViews/EditingScreenVC.m"
-                  timestampString = "566528027.060763"
+                  timestampString = "566773790.147827"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "625"
@@ -881,6 +881,22 @@
             endingLineNumber = "20"
             landmarkName = "switchAsap"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "heartwoodappusingjson/NewOrderViews/AddressTableVC.m"
+            timestampString = "566773790.031539"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

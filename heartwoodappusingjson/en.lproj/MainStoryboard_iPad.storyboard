@@ -648,7 +648,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-476" y="-1573"/>
+            <point key="canvasLocation" x="-466" y="-1563"/>
         </scene>
         <!--orderScreen-->
         <scene sceneID="QaJ-MM-mPF">
@@ -4369,10 +4369,10 @@
             </objects>
             <point key="canvasLocation" x="-4320.3125" y="485.74218749999994"/>
         </scene>
-        <!--Address InfoVC-->
+        <!--Address TableVC-->
         <scene sceneID="pvD-dF-Xds">
             <objects>
-                <viewController storyboardIdentifier="itemTable" id="doY-B1-1Pg" customClass="AddressInfoVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="addressTable" id="doY-B1-1Pg" customClass="AddressTableVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JYi-EV-a5h">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -4392,7 +4392,7 @@
                                             <rect key="frame" x="305" y="2.5" width="158" height="39"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                            <state key="normal" title="Select Item">
+                                            <state key="normal" title="Select Address">
                                                 <color key="titleColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
@@ -4432,7 +4432,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="uUj-rK-kBm"/>
                     <connections>
-                        <outlet property="itemTableView" destination="TXW-TA-pqs" id="A3f-7V-eu5"/>
+                        <outlet property="addressTableView" destination="TXW-TA-pqs" id="G0K-Mv-lnd"/>
                         <outlet property="searchDisplayController" destination="fnX-SO-BGw" id="h8M-U6-w8u"/>
                     </connections>
                 </viewController>
@@ -4446,7 +4446,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-1120" y="-1567"/>
+            <point key="canvasLocation" x="-1120" y="-1563"/>
         </scene>
     </scenes>
     <resources>

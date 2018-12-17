@@ -8,6 +8,7 @@
 
 #import "CustomerTableVC.h"
 #import "ItemTableVC.h"
+#import "AddressTableVC.h"
 #import "Customer.h"
 #import "GMBillingShippingInfoVC.h"
 
@@ -183,9 +184,9 @@
     Customer* customer = (Customer*)[arrayForLetter objectAtIndex:indexPath.row];
     
     if ([status isEqualToString:NP]) {
-        ItemTableVC *itemTableView = [self.storyboard instantiateViewControllerWithIdentifier:@"addressTable"];
-        itemTableView.customerInfo = customer;
-        [self.navigationController pushViewController:itemTableView animated:YES];
+        AddressTableVC *addressTableView = [self.storyboard instantiateViewControllerWithIdentifier:@"addressTable"];
+        addressTableView.customerInfo = customer;
+        [self.navigationController pushViewController:addressTableView animated:YES];
     }
     if ([status isEqualToString:GM]) {
         gmorderHeaderInfo.CustNum = customer.CustNum;
