@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Item.h"
+#import "Address.h"
 #import "OrderLine.h"
 
 @interface OrderScreenVC : UIViewController <UITableViewDataSource, UITableViewDelegate>
@@ -20,6 +21,7 @@
 @property (nonatomic, retain) NSString *alertViewAction;
 @property (nonatomic, retain) OrderLine *orderlineinfo;
 @property (nonatomic, retain) Item * itemInfo;
+@property (nonatomic, retain) Address * addressInfo; 
 @property (nonatomic, retain) NSArray * allTableData;
 @property (strong, nonatomic) NSMutableDictionary* filteredTableData;
 @property (strong, nonatomic) NSArray* letters;

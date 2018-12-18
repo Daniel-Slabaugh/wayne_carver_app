@@ -33,7 +33,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"custNumber: %@", customerInfo.CustNum);
     NSLog(@"%@", addressInfo.CustNum);
     NSMutableArray * unsortedNames = [Item getItemsWhere:addressInfo.CustNum];
     NSArray * sortedNames = [[NSArray alloc] initWithArray:[unsortedNames sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
@@ -41,7 +40,6 @@
         NSString *second = [(Item*)b ItemNo];
         return [first compare:second];
     }]];
-    
     self.itemsArray = [NSMutableArray arrayWithArray:sortedNames];
     NSLog(@"%@", self.itemsArray);
     [itemTableView reloadData];
@@ -98,7 +96,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     OrderScreenVC *orderScreen = [self.storyboard instantiateViewControllerWithIdentifier:@"orderScreen"];
     orderScreen.itemInfo = [itemsArray objectAtIndex:indexPath.row];
-#warning add address here
+    orderScreen.addressInfo = self.addressInfo;
     [self.navigationController pushViewController:orderScreen animated:YES];
     
 }

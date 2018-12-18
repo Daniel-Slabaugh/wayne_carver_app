@@ -29,6 +29,7 @@
 @synthesize inputAccessoryView;
 @synthesize cellSelected;
 @synthesize itemInfo;
+@synthesize addressInfo;
 @synthesize btnTxtToFill;
 @synthesize allTableData;
 @synthesize filteredTableData;
@@ -274,7 +275,6 @@
     NSString* letter = [letters objectAtIndex:indexPath.section];
     NSArray* arrayForLetter = (NSArray*)[filteredTableData objectForKey:letter];
     OrderDetail* tmpOrderDetail = (OrderDetail*)[arrayForLetter objectAtIndex:indexPath.row];
-#warning consider
     if ([itemInfo.ItemNo isEqual:@"DR1002"]) {
         tmpOrderDetail.QtyOrdered += 3;
     } else {
@@ -571,6 +571,8 @@
             tmpOrderHdr.UserID = user.UserID;
             tmpOrderHdr.CustNum = itemInfo.CustNum;
             tmpOrderHdr.LocalStatus = @"Started";
+#warning added store id here
+            tmpOrderHdr.StoreID = addressInfo.StoreID;
             
             NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
             [dateFormatter setDateStyle:NSDateFormatterShortStyle];
