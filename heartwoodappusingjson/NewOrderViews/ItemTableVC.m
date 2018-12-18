@@ -33,8 +33,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    NSMutableArray * unsortedNames = [Item getItemsWhere:customerInfo.CustNum];
+    NSLog(@"custNumber: %@", customerInfo.CustNum);
+    NSLog(@"%@", addressInfo.CustNum);
+    NSMutableArray * unsortedNames = [Item getItemsWhere:addressInfo.CustNum];
     NSArray * sortedNames = [[NSArray alloc] initWithArray:[unsortedNames sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
         NSString *first = [(Item*)a ItemNo];
         NSString *second = [(Item*)b ItemNo];
@@ -42,6 +43,7 @@
     }]];
     
     self.itemsArray = [NSMutableArray arrayWithArray:sortedNames];
+    NSLog(@"%@", self.itemsArray);
     [itemTableView reloadData];
 }
 

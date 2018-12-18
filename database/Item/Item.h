@@ -12,7 +12,6 @@
 
 #define  TBL_ITEM        @"Items"
 #define  FLD_CUSTNUM     @"CustNum"
-#define  FLD_ADDRESS     @"Address"
 #define  FLD_PROGNAME    @"ProgName"
 #define  FLD_ITEMNO      @"ItemNO"
 #define  FLD_NAMESET     @"Nameset"
@@ -23,7 +22,6 @@
 {
     NSString * CustNum;
     NSString * ProgName;
-    NSString * Address;
     NSString * ItemNo;
     NSString * Nameset;
     NSString * MAD;
@@ -32,7 +30,6 @@
 
 @property (nonatomic, retain) NSString * CustNum;
 @property (nonatomic, retain) NSString * ProgName;
-@property (nonatomic, retain) NSString * Address;
 @property (nonatomic, retain) NSString * ItemNo;
 @property (nonatomic, retain) NSString * Nameset;
 @property (nonatomic, retain) NSString * MAD;

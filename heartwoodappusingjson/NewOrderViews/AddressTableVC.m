@@ -95,6 +95,8 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     ItemTableVC *itemTableView = [self.storyboard instantiateViewControllerWithIdentifier:@"itemTable"];
+    Address *addr = [addressArray objectAtIndex:indexPath.row];
+    NSLog(@"%@", addr.CustNum);
     itemTableView.addressInfo = [addressArray objectAtIndex:indexPath.row];
     itemTableView.customerInfo = self.customerInfo;
     [self.navigationController pushViewController:itemTableView animated:YES];
