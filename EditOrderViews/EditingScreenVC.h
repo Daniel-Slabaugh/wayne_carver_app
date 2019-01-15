@@ -27,10 +27,6 @@
 @property (retain, nonatomic) IBOutlet UILabel *lblCustomer;
 
 //Store
-@property (retain, nonatomic) IBOutlet UIButton *btnSetStore;
-- (IBAction)btnSetStore:(id)sender;
-@property (retain, nonatomic) IBOutlet UIButton *btnChangeStore;
-- (IBAction)btnChangeStore:(id)sender;
 @property (retain, nonatomic) IBOutlet UILabel *lblSetStore;
 
 //Ship method

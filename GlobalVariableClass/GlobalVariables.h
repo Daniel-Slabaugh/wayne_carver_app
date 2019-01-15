@@ -49,7 +49,4 @@ extern NSString *lastOrderSent;
 @property (retain, nonatomic) NSString *dateLastSynced;
 
 
-
-
-
 @end

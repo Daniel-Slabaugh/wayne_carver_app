@@ -966,29 +966,6 @@
                                             <action selector="btnDeleteOrder:" destination="7im-Po-j7x" eventType="touchUpInside" id="398-g3-w7F"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="245-dm-kNg">
-                                        <rect key="frame" x="212" y="398" width="345" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.76078431369999999" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <state key="normal">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Set Shipping Location">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="30" name="HelveticaNeue"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </state>
-                                        <state key="highlighted">
-                                            <attributedString key="attributedTitle"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="btnSetStore:" destination="7im-Po-j7x" eventType="touchUpInside" id="U7i-fF-vfI"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="4Nn-lX-kL1">
                                         <rect key="frame" x="212" y="534" width="345" height="60"/>
                                         <color key="backgroundColor" red="0.76078431369999999" green="0.83529411760000005" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1027,15 +1004,6 @@
                                             <action selector="btnSetShipDate:" destination="7im-Po-j7x" eventType="touchUpInside" id="s3f-0t-4lf"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ouA-45-oeB">
-                                        <rect key="frame" x="317" y="428" width="133" height="36"/>
-                                        <state key="normal" title="(Tap to Change)">
-                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="btnChangeStore:" destination="7im-Po-j7x" eventType="touchUpInside" id="gKE-7W-JTi"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kg9-TK-mFe">
                                         <rect key="frame" x="317" y="497" width="133" height="35"/>
                                         <state key="normal" title="(Tap to Change)">
@@ -1068,12 +1036,6 @@
                                             <action selector="btnCreatePDF:" destination="7im-Po-j7x" eventType="touchUpInside" id="LOM-2i-ZtQ"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" id="xEn-hM-tqk">
-                                        <rect key="frame" x="0.0" y="398" width="769" height="60"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <color key="textColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="SsH-j6-eGb">
                                         <rect key="frame" x="324" y="810" width="289" height="30"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -1099,6 +1061,12 @@
                                             <action selector="btnChangeShipMethod:" destination="7im-Po-j7x" eventType="touchUpInside" id="MY3-yd-Kug"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" id="xEn-hM-tqk">
+                                        <rect key="frame" x="-1" y="398" width="769" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="0.019607843140000001" green="0.2470588235" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -1108,9 +1076,7 @@
                     <connections>
                         <outlet property="btnChangeShipDate" destination="kg9-TK-mFe" id="y3m-sp-cgX"/>
                         <outlet property="btnChangeShipMethod" destination="jUG-P5-cB2" id="N8v-yL-UjG"/>
-                        <outlet property="btnChangeStore" destination="ouA-45-oeB" id="XY6-e6-YBl"/>
                         <outlet property="btnSetShipDate" destination="kOe-Le-iLd" id="uJx-U9-agf"/>
-                        <outlet property="btnSetStore" destination="245-dm-kNg" id="xt7-DS-GR8"/>
                         <outlet property="btnShipMethod" destination="4Nn-lX-kL1" id="3rN-R9-7au"/>
                         <outlet property="lblCustomer" destination="cQJ-WM-ubb" id="1u2-EL-IJC"/>
                         <outlet property="lblDateStarted" destination="Zix-u2-GA1" id="H9R-Ju-QOl"/>

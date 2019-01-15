@@ -602,7 +602,6 @@
     return YES;
 }
 
-#warning editing this for reposting purposes
 - (void)receiveTestNotification:(NSNotification *) notification {
     if ([[notification name] isEqualToString:@"PostWorked"]) {
 
@@ -613,12 +612,7 @@
 
 
         orderSent = @"orderSent";
-        // no longer deleting order, instead moving it to posted order screen.
-        //        [OrderHeader deleteWhere:orderHeaderInfo.OrderNum];
         orderHeaderInfo.LocalStatus = POST;
-#warning comment out here to repost order wo it going to order history
-//        [OrderHeader updateOrderHeader:orderHeaderInfo];
-
         NSMutableArray *allViewControllers = [NSMutableArray arrayWithArray:[self.navigationController viewControllers]];
         [self.navigationController popToViewController:[allViewControllers objectAtIndex:1] animated:YES];
         NSLog(@"data posted!");
@@ -684,17 +678,6 @@
             pdfView.orderHeaderInfo = orderHeaderInfo;
             [self.navigationController pushViewController:pdfView animated:YES];
         }
-    } else if (buttonIndex == 2) {
-        if ([alertAction isEqualToString:PDF])
-        {
-            orderHeaderInfo.PONum = txtPONumber.text;
-            orderHeaderInfo.Notes = txtNotes.text;
-            WCPDFViewController *pdfView = [self.storyboard instantiateViewControllerWithIdentifier:@"WCPDFViewController"];
-            orderHeaderInfo.PDFType = @"FULL";
-            //            pdfView.PDFType = @"FULL";
-            pdfView.orderHeaderInfo = orderHeaderInfo;
-            [self.navigationController pushViewController:pdfView animated:YES];
-        }
     }
 }
 
@@ -718,21 +701,21 @@
     [self.view endEditing:YES];
 }
 
-- (IBAction)btnSetStore:(id)sender {
-    EditDetailScreenVC *editDetailView = [self.storyboard instantiateViewControllerWithIdentifier:@"EditDetailScreen"];
-    editDetailView.orderHeaderInfo = orderHeaderInfo;
-    editDetailView.type = @"Store";
-    editDetailView.modalPresentationStyle = UIModalPresentationFormSheet;
-    [self.navigationController presentViewController:editDetailView animated:YES completion:nil];
-}
+//- (IBAction)btnSetStore:(id)sender {
+//    EditDetailScreenVC *editDetailView = [self.storyboard instantiateViewControllerWithIdentifier:@"EditDetailScreen"];
+//    editDetailView.orderHeaderInfo = orderHeaderInfo;
+//    editDetailView.type = @"Store";
+//    editDetailView.modalPresentationStyle = UIModalPresentationFormSheet;
+//    [self.navigationController presentViewController:editDetailView animated:YES completion:nil];
+//}
 
-- (IBAction)btnChangeStore:(id)sender {
-    EditDetailScreenVC *editDetailView = [self.storyboard instantiateViewControllerWithIdentifier:@"EditDetailScreen"];
-    editDetailView.orderHeaderInfo = orderHeaderInfo;
-    editDetailView.type = @"Store";
-    editDetailView.modalPresentationStyle = UIModalPresentationFormSheet;
-    [self.navigationController presentViewController:editDetailView animated:YES completion:nil];
-}
+//- (IBAction)btnChangeStore:(id)sender {
+//    EditDetailScreenVC *editDetailView = [self.storyboard instantiateViewControllerWithIdentifier:@"EditDetailScreen"];
+//    editDetailView.orderHeaderInfo = orderHeaderInfo;
+//    editDetailView.type = @"Store";
+//    editDetailView.modalPresentationStyle = UIModalPresentationFormSheet;
+//    [self.navigationController presentViewController:editDetailView animated:YES completion:nil];
+//}
 
 - (IBAction)btnShipMethod:(id)sender {
     EditDetailScreenVC *editDetailView = [self.storyboard instantiateViewControllerWithIdentifier:@"EditDetailScreen"];

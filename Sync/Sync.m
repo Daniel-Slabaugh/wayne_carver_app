@@ -888,7 +888,6 @@
         [self syncWayneOrderHeaders:theUser.UserID withPassword:theUser.Password];
     } else if(post) {
         NSLog(@"Successfully Posted");
-#warning Here do add email code
         [[NSNotificationCenter defaultCenter] postNotificationName:@"PostWorked" object:self];
 
         

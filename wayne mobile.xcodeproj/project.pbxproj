@@ -126,6 +126,7 @@
 		FDD37FF51D10947B00FF9577 /* AttemptedOrderDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD37FF41D10947B00FF9577 /* AttemptedOrderDetail.m */; };
 		FDD6B0E521C4888A00E33F58 /* AddressTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD6B0E321C4888900E33F58 /* AddressTableVC.m */; };
 		FDDB1B7017D241280066EABC /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDB1B6F17D241280066EABC /* Login.m */; };
+		FDE9695921CC42A600BCB7E8 /* UserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE9695721CC42A600BCB7E8 /* UserSettings.m */; };
 		FDECF3FB17832B7700316050 /* IP.m in Sources */ = {isa = PBXBuildFile; fileRef = FDECF3FA17832B7700316050 /* IP.m */; };
 		FDECF3FF1783329400316050 /* IPSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDECF3FE1783329400316050 /* IPSettingsViewController.m */; };
 		FDECF40B17834BDD00316050 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FDECF40A17834BDD00316050 /* Settings.bundle */; };
@@ -350,6 +351,8 @@
 		FDD6B0E421C4888900E33F58 /* AddressTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddressTableVC.h; path = heartwoodappusingjson/NewOrderViews/AddressTableVC.h; sourceTree = SOURCE_ROOT; };
 		FDDB1B6E17D241280066EABC /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Login.h; path = Login/Login.h; sourceTree = "<group>"; };
 		FDDB1B6F17D241280066EABC /* Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Login.m; path = Login/Login.m; sourceTree = "<group>"; };
+		FDE9695721CC42A600BCB7E8 /* UserSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSettings.m; sourceTree = "<group>"; };
+		FDE9695821CC42A600BCB7E8 /* UserSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSettings.h; sourceTree = "<group>"; };
 		FDECF3F917832B7700316050 /* IP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IP.h; sourceTree = "<group>"; };
 		FDECF3FA17832B7700316050 /* IP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IP.m; sourceTree = "<group>"; };
 		FDECF3FD1783329400316050 /* IPSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPSettingsViewController.h; path = IPSettings/IPSettingsViewController.h; sourceTree = "<group>"; };
@@ -496,6 +499,7 @@
 				FD2523631757CB64000EDF48 /* HeartwoodApp */,
 				FD2FED8E1784AC85008C4973 /* Sync */,
 				FDECF3F817832AE500316050 /* IP */,
+				FDE9695A21CC42B000BCB7E8 /* UserSettings */,
 				FD96A0A317A843EE009639E7 /* Database */,
 				FDA8636017B569880042114A /* Utility Classes */,
 				FDC3DE791843B88800B98819 /* Login */,
@@ -1017,6 +1021,16 @@
 			name = AttemptedOrderDetail;
 			sourceTree = "<group>";
 		};
+		FDE9695A21CC42B000BCB7E8 /* UserSettings */ = {
+			isa = PBXGroup;
+			children = (
+				FDE9695821CC42A600BCB7E8 /* UserSettings.h */,
+				FDE9695721CC42A600BCB7E8 /* UserSettings.m */,
+			);
+			name = UserSettings;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		FDECF3F817832AE500316050 /* IP */ = {
 			isa = PBXGroup;
 			children = (
@@ -1164,6 +1178,7 @@
 				FD970574176A3FE800C2926D /* SBJsonStreamWriter.m in Sources */,
 				FD970575176A3FE800C2926D /* SBJsonStreamWriterAccumulator.m in Sources */,
 				FD970576176A3FE800C2926D /* SBJsonStreamWriterState.m in Sources */,
+				FDE9695921CC42A600BCB7E8 /* UserSettings.m in Sources */,
 				FDB990D31CFE3AF1002AA72E /* SBJson4StreamWriterState.m in Sources */,
 				FD970577176A3FE800C2926D /* SBJsonTokeniser.m in Sources */,
 				FD5C907C181B221A00D6300F /* Address.m in Sources */,
