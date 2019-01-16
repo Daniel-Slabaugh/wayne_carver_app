@@ -59,10 +59,10 @@
 @synthesize alertAction;
 @synthesize btnSetShipDate;
 @synthesize btnShipMethod;
-@synthesize btnSetStore;
+//@synthesize btnSetStore;
 @synthesize btnChangeShipDate;
 @synthesize btnChangeShipMethod;
-@synthesize btnChangeStore;
+//@synthesize btnChangeStore;
 @synthesize lblShipDate;
 @synthesize lblShipMethod;
 @synthesize lblSetStore;
@@ -79,7 +79,7 @@
 - (void)viewDidLoad {
 
     //setup lbl and btns
-    [btnSetStore.titleLabel setTextColor:[[UIColor alloc] initWithRed:5.0 / 255 green:63.0 / 255 blue:65.0 / 255 alpha:1.0]];
+//    [btnSetStore.titleLabel setTextColor:[[UIColor alloc] initWithRed:5.0 / 255 green:63.0 / 255 blue:65.0 / 255 alpha:1.0]];
     [btnSetShipDate.titleLabel setTextColor:[[UIColor alloc] initWithRed:5.0 / 255 green:63.0 / 255 blue:65.0 / 255 alpha:1.0]];
     [btnShipMethod.titleLabel setTextColor:[[UIColor alloc] initWithRed:5.0 / 255 green:63.0 / 255 blue:65.0 / 255 alpha:1.0]];
     [lblSetStore setTextColor:[[UIColor alloc] initWithRed:5.0 / 255 green:63.0 / 255 blue:65.0 / 255 alpha:1.0]];
@@ -155,16 +155,16 @@
 
     if ([orderHeaderInfo.StoreID isEqual:@"(null)"]) {
         lblSetStore.text = @"";
-        [btnSetStore setEnabled:YES];
-        [btnSetStore setHidden:NO];
-        [btnChangeStore setEnabled:NO];
-        [btnChangeStore setHidden:YES];
+//        [btnSetStore setEnabled:YES];
+//        [btnSetStore setHidden:NO];
+//        [btnChangeStore setEnabled:NO];
+//        [btnChangeStore setHidden:YES];
     } else {
         lblSetStore.text = [NSString stringWithFormat:@"Store: %@", orderHeaderInfo.StoreID];
-        [btnSetStore setEnabled:NO];
-        [btnSetStore setHidden:YES];
-        [btnChangeStore setEnabled:YES];
-        [btnChangeStore setHidden:NO];
+//        [btnSetStore setEnabled:NO];
+//        [btnSetStore setHidden:YES];
+//        [btnChangeStore setEnabled:YES];
+//        [btnChangeStore setHidden:NO];
     }
 
     if ([orderHeaderInfo.ShipMethod isEqual:@"(null)"]) {
